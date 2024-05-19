@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  bottom: 0;
+}
+
+body {
+  background-color: snow;
+}
+
+section.users {
+  background-color: plum;
+  h1 {
+    font-size: 40px;
+    color: snow;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .usersSet {
+    display: grid;
+    padding-bottom: 30px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 20px;
+    justify-content: center;
+
+    article.user {
+      border: 2px solid palevioletred;
+      background-color: snow;
+      color: mediumvioletred;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+      position: relative;
+
+      img.profile {
+        width: 60px;
+      }
+
+      img.cross {
+        width: 30px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      h4 {
+        font-size: 20px;
+      }
+      h6 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
